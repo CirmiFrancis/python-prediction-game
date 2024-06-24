@@ -1,4 +1,5 @@
-# Ta Te Ti (la IA no predice, sólo juega)
+# Ta-Te-Ti (la IA no predice, sólo juega)
+
 import random, time
 
 jugadasDisponibles = [1,2,3,4,5,6,7,8,9]

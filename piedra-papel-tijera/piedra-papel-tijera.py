@@ -1,6 +1,5 @@
-# Piedra - Papel - Tijera (v2) 
-
-# * Falta optimizar porque se repite código. Aguante los break. *
+# Piedra-Papel-Tijera 
+# Falta optimizar porque se repite código.
 
 # COLORES
 red = "\033[91m"

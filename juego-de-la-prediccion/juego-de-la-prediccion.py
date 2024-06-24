@@ -1,4 +1,4 @@
-# Juego de la predicción, similar al de "el gato y la caja".
+# Juego de la predicción, similar al de "El Gato y La Caja".
 # https://elgatoylacaja.com/elnudo/el-juego-de-la-prediccion?utm_source=sitioEGLC&utm_medium=gato-hoy
 
 # Imports
