@@ -2,7 +2,7 @@
 
 # Imports
 from productos import *
-from colors import *
+from color import *
 
 # Ingresar Nombre de Usuario
 def ingresar_usuario():
@@ -16,9 +16,9 @@ def ingresar_usuario():
 
 # Imprimir Productos
 def imprimir_productos():
-    print('\nProductos Disponibles:\n')
+    print(f'\n{green}Productos Disponibles:{reset}\n')
     for i in productos: 
-        print(i) # Imprimo el valor
+        print(f'{i}') # Imprimo el valor
 
 # Buscar Producto en la Lista
 def buscar_producto(nombre):
@@ -71,7 +71,9 @@ def seguir_comprando():
 
 # Imprimir Carrito
 def imprimir_carrito(cantidadTickets, carrito, precioTotal):
-    print(f'\nTickets Generados ({cantidadTickets}):\n') # Imprimo la cantidad de tickets
+    print(f'\n{yellow}Cantidad Tickets Generados:{reset} {cantidadTickets}') # Imprimo la cantidad de tickets
+    print(f'\n{yellow}Tickets:{reset}\n')
     for i in carrito:
-        print(i) # Imprimo cada ticket
-    print(f'\nTotal: ${precioTotal}') # Imprimo el precio total
+        print(f'{i}') # Imprimo cada ticket
+    print(f'\n{yellow}Precio Promedio Tickets:{reset} ${round(precioTotal / cantidadTickets, 2)}') # Imprimo el precio promedio de los tickets
+    print(f'\n{yellow}Precio Total:{reset} ${precioTotal}') # Imprimo el precio total

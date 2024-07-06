@@ -1,7 +1,7 @@
 # Imports
 from func import *
 from productos import *
-from colors import *
+from color import *
 
 # Main
 def main():
@@ -29,7 +29,8 @@ def main():
         cantidadTickets += 1 # Aumento la Cantidad de Tickets
         carrito.append(ticket) # Agrego un Ticket el Carrito
         precioTotal += ticket['precioTicket'] # Aumento el Precio Total
-        print(f'\n{green}{ticket}{reset}') # Imprimo el Ticket
+        print(f'\n{blue}Ticket {cantidadTickets}:{reset}')
+        print(f'\n{ticket}') # Imprimo el Ticket
 
         # Seguir Comprando
         print(f'\n{yellow}============================================================={reset}')
@@ -38,8 +39,12 @@ def main():
         if respuesta == 'NO':
             flag = False # Salgo del Ciclo WHILE
 
-    print(f'\n{yellow}============================================================={reset}')
+    print(f'\n{yellow}============================================================================{reset}')
+    print(f'{yellow}============================================================================{reset}')
+    print(f'{yellow}============================================================================{reset}')
     imprimir_carrito(cantidadTickets, carrito, precioTotal) # Imprimir Carrito
-    print(f'\n{yellow}============================================================={reset}\n')
+    print(f'\n{yellow}============================================================================{reset}')
+    print(f'{yellow}============================================================================{reset}')
+    print(f'{yellow}============================================================================{reset}\n')
 
 main()
